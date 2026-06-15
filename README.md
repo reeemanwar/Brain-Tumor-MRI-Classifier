@@ -45,7 +45,7 @@ The model comparison and per-class evaluation revealed clear patterns in classif
 Detailed results including the confusion matrix and per-class classification report are available in the project notebook and report.
 
 ## Repository Structure
-
+* [Raw Data](https://github.com/reeemanwar/brain-tumor-mri-classifier/blob/main/BUS638_Project.ipynb) — full model training, evaluation, and visualizations
 * [Notebook](https://github.com/reeemanwar/brain-tumor-mri-classifier/blob/main/BUS638_Project.ipynb) — full model training, evaluation, and visualizations
 * [Report](https://github.com/reeemanwar/brain-tumor-mri-classifier/blob/main/Report_MRI_Classification.docx) — project report with findings and business context
 
