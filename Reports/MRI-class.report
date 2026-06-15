@@ -1,0 +1,60 @@
+BRAIN TUMOR MRI CLASSIFICATION
+Deep Learning for Medical Image Analysis  |  PyTorch  |  CNN
+Reem Anwar  ·  Sonja Skura  |  BUS638
+
+89.81%
+Improved CNN
+Accuracy	87.19%
+Basic CNN
+Accuracy	4
+Tumor
+Classes	15
+Training
+Epochs
+
+Project Overview
+This project applies deep learning to a real-world medical problem — classifying brain MRI scans into four categories: glioma, meningioma, pituitary tumor, and no tumor. The model learns to recognize visual patterns in MRI images entirely from data, without any pre-programmed medical knowledge.
+Two custom Convolutional Neural Networks (CNNs) were built and compared. The Improved CNN achieved 89.81% test accuracy, outperforming the baseline by 2.62 percentage points through targeted architectural enhancements including batch normalization and an additional convolutional layer.
+Why It Matters
+Radiologists face growing imaging workloads, and delays in diagnosis directly affect patient outcomes. An AI classification tool can serve as a decision-support layer — flagging scans by tumor type to help prioritize clinical review, without replacing the radiologist's judgment.
+
+Class	Plain-Language Definition	Classification Note
+Glioma	Tumor from glial cells — often aggressive, visually complex	Hardest class to classify
+Meningioma	Tumor on membranes surrounding the brain — frequently benign	Can resemble Glioma on scans
+Pituitary	Tumor on the pituitary gland at the brain's base	Distinct location aids accuracy
+No Tumor	Healthy scan — no tumor present	Highest model accuracy
+
+Methodology
+The project followed a standard deep learning pipeline for medical image classification:
+•	Images resized to 128×128 pixels and normalized — consistent preprocessing across all scans
+•	Batched data loading using PyTorch's DataLoader (batch size 32, GPU-accelerated in Google Colab)
+•	Both models trained for 15 epochs using the Adam optimizer and Cross-Entropy Loss
+•	Dropout regularization applied to prevent the model from memorizing training data
+Two architectures were evaluated:
+	Basic CNN	Improved CNN ✓
+Architecture	2 convolutional layers	3 convolutional layers
+Batch Norm	None	After each layer ✓
+Dropout Rate	0.5	0.3
+Test Accuracy	87.19%	89.81%
+Verdict	Solid baseline	Best performer
+
+Results & Key Findings
+•	The Improved CNN outperformed the baseline across all four tumor categories
+•	No Tumor and Pituitary were the strongest classes — their MRI patterns are most visually distinct
+•	Glioma and Meningioma were hardest to separate — a known challenge even for trained radiologists
+•	Batch normalization was the single most impactful change, stabilizing training and reducing overfitting
+•	Full confusion matrix and per-class precision, recall, and F1-score reported in the project notebook
+Business Relevance & Impact
+This project demonstrates how deep learning can be applied to high-stakes domains where accurate, explainable AI has real consequences. Building two models and comparing them rigorously reflects the analytical discipline required in production ML — not just building something that works, but understanding why it works and where it falls short.
+•	A production version of this tool could flag priority MRI scans, reducing time from scan to diagnosis
+•	The CNN pipeline is transferable to other imaging tasks: chest X-rays, retinal scans, skin lesions
+•	Future work: transfer learning (ResNet-50), data augmentation, and Grad-CAM for explainability
+Tools & Technologies
+Component	Details
+Language	Python 3
+Deep Learning	PyTorch — CNN, Adam optimizer, CrossEntropyLoss
+Image Pipeline	torchvision — ImageFolder, transforms, DataLoader
+Evaluation	scikit-learn — confusion matrix, classification report
+Environment	Google Colab with GPU-accelerated training
+
+Reem Anwar  ·  Sonja Skura  ·  BUS638  ·  Deep Learning for Medical Image Classification
