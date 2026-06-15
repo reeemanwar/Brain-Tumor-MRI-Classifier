@@ -46,7 +46,7 @@ Detailed results including the confusion matrix and per-class classification rep
 
 ## Repository Structure
 * [Raw Data](https://github.com/reeemanwar/brain-tumor-mri-classifier/blob/main/BUS638_Project.ipynb) — all files of the raw datatset
-* [Notebook](https://github.com/reeemanwar/brain-tumor-mri-classifier/blob/main/BUS638_Project.ipynb) — full model training, evaluation, and visualizations
+* [Notebook](notebooks/MRI-Class.ipynb) — full model training, evaluation, and visualizations
 * [Report](https://github.com/reeemanwar/brain-tumor-mri-classifier/blob/main/Report_MRI_Classification.docx) — project report with findings and business context
 
 ## Business Relevance
