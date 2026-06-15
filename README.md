@@ -46,8 +46,8 @@ Detailed results including the confusion matrix and per-class classification rep
 
 ## Repository Structure
 * [Raw Data](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset) — all files of the raw datatset 
-* [Notebook](notebooks/MRI-Class.ipynb) — full model training, evaluation, and visualizations
-* [Report](Reports/MRI_Tumor_Classification_Report.docx) — project report with findings and business context
+* [Notebook](Notebooks/MRI-Class.ipynb) — full model training, evaluation, and visualizations
+* [Report](Reports/MRI_Tumor_Classification_Report.pdf) — project report with findings and business context
 
 ## Business Relevance
 This project demonstrates how deep learning can be applied to high-stakes domains like healthcare, where accurate and explainable AI has direct real-world consequences. Building two models and comparing them rigorously reflects the kind of analytical discipline required in production ML environments — not just building something that works, but understanding why it works and where it falls short.
